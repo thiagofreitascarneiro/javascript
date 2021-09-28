@@ -3,16 +3,15 @@ function jogo(jogos) {
    var recorde = []
    var cont = 0
    for(partida in jogos){
-       console.log(partida)
-       //console.log(cont)
        if(cont == 0){
         var maior = jogos[partida]
+        var menor = jogos[partida]
        }else if(cont > 0){
             if (jogos[partida] > maior){
-                maior = partida
+                maior = jogos[partida]
                 contador = contador + 1
-                console.log(maior)
-                console.log(contador)
+            }else if (jogos[partida] < menor){
+                var pior_jogo = partida
             }
 
        }
@@ -20,9 +19,10 @@ function jogo(jogos) {
 
    } 
 recorde.push(contador)
+recorde.push(pior_jogo)
 return recorde
 }
 
-var lista_jogos = [10, 20, 20, 8, 25, 3 ,0, 30, 1]
+var lista_jogos = [10, 20, 20, 8, 25, 3 ,0, 30, 10]
 console.log(jogo(lista_jogos))
 
