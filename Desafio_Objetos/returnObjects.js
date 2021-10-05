@@ -6,7 +6,7 @@ const tecnologia = { a: "Apple", b: "Microsoft", c: "Google" }
 function keysAndValues(obj) {
     let valores = Object.values(obj)
     let chaves = Object.keys(obj)
-    resultado = [valores, chaves]
+    resultado = [chaves, valores]
 
     return resultado
 }
