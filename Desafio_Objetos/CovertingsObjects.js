@@ -5,15 +5,12 @@ const cabecalho = {
     a: 1,
     b: 2,
     c: 3,
+    d: 4,
 }
-
-let lista = []
-
-
-
 
 function toArray(obj) {
 	return Object.entries(obj);
 }
 
 console.log(toArray(cabecalho))
+
