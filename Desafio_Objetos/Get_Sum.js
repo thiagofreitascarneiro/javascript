@@ -9,12 +9,27 @@ const budgets = [
   ];
 
 
-const resultado = budgets.map(v => v.budget).reduce(function(acumulador, valor) {
-    console.log(acumulador, valor)
 
-      acumulador + valor
-})
+function getBudgets(arr) {
+    const resultado = arr.map(v => v.budget).reduce(function(acumulador, valor) {
+          return acumulador + valor
+    })
+	return resultado
+}
 
-console.log(resultado)
+console.log(getBudgets(budgets))
+
+
+// other way to resolve using only reduce
+function getBudgets2(arr) {
+	const budgets = arr.reduce((total, person) => total + person.budget, 0);
+	return budgets;
+}
+
+
+
+console.log(getBudgets2(budgets))
+
+
 
 
