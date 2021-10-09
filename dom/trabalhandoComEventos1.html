@@ -12,6 +12,17 @@
         <a href="https://google.com.br">Google</a>
     </div>
     <script>
-        // ...
+           function navegar(e) {
+               e.preventDefault()
+               console.log('Saindo em 5s...')
+               setTimeout(() => {
+                   const link = e.target
+                   window.location.href = e.target.href
+
+               }, 5000)
+           }
+
+           const a = document.querySelector('a')
+           a.onclick = navegar
     </script>
 </body>
