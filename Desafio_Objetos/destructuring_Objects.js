@@ -9,7 +9,7 @@ let users = [
   { name: "Jacob", email: "jacob@example.com" }
 ]
 
- const str = users.map(e => e.email)
+ const emails = users.map(e => e.email)
 
 for(i in users) {
     
@@ -17,4 +17,5 @@ for(i in users) {
 }
 
 console.log(names) 
+console.log(emails)
 
