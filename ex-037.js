@@ -14,7 +14,7 @@ const woman = produtos.filter((e) => {
 
 })
 
-//console.log(woman)
+console.log(woman)
 
 
 const man = produtos.map((e) => {
