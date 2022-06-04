@@ -18,6 +18,7 @@ function* geradora2() {
         yield i;
         i++;
     }
+
 }
 
 const g2 = geradora2();
