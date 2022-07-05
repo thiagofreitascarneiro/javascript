@@ -8,11 +8,11 @@ export class Empresa {
         this.cnpj = cnpj;
     }
 
-    adicionaColaborador(colaborador: Colaborador): void {
+   public  adicionaColaborador(colaborador: Colaborador): void {
         this.colaboradores.push(colaborador);
     }
 
-    mostrarColaboradores(): void {
+   public mostrarColaboradores(): void {
         for (const colaborador of this.colaboradores) {
             console.log(colaborador);
         }
