@@ -20,4 +20,4 @@ export class Pessoa {
 }
 
 export class Aluno extends Pessoa {}
-expwort class Cliente extends Pessoa {}
+export class Cliente extends Pessoa {}
